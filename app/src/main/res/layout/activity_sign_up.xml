@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollIndicators="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingHorizontal="15dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_onboard_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/volkhov_bold"
+                    android:gravity="start"
+                    android:text="Create Account"
+                    android:textColor="@color/brown_color"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/txt_onboard_subtitle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_500"
+                    android:gravity="center"
+                    android:text="Let’s Create Account Together"
+                    android:textColor="@color/grey_light_color"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="@id/et_name"
+                    app:layout_constraintStart_toStartOf="@id/et_name"
+                    app:layout_constraintTop_toBottomOf="@+id/et_name">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/user_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="3dp"
+                        android:background="@drawable/custom_radio_selector"
+                        android:checked="true"
+                        android:fontFamily="@font/poppins_500"
+                        android:gravity="center_vertical"
+                        android:text="User"
+                        android:theme="@style/MyRadioButtonStyle"
+                        android:textColor="@drawable/custom_radio_text_color"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/coach_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="3dp"
+                        android:background="@drawable/custom_radio_selector"
+                        android:fontFamily="@font/poppins_500"
+                        android:gravity="center_vertical"
+                        android:text="Qoach"
+                        android:theme="@style/MyRadioButtonStyle"
+                        android:textColor="@drawable/custom_radio_text_color"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_500"
+                    android:gravity="start"
+                    android:text="Name"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/solid_rounded_corner_30dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppins_600"
+                    android:gravity="start"
+                    android:textColor="@color/text_color"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_500"
+                    android:gravity="start"
+                    android:text="Email Address"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/solid_rounded_corner_30dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppins_600"
+                    android:gravity="start"
+                    android:textColor="@color/text_color"
+                    android:hint="alexbeth@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_500"
+                    android:gravity="start"
+                    android:text="Password"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/solid_rounded_corner_30dp"
+                    android:backgroundTint="@color/white"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_600"
+                        android:gravity="start"
+                        android:hint="********"
+                        android:textColor="@color/text_color"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imgEye"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_eye_svg"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/solid_rounded_corner_30dp"
+                    android:fontFamily="@font/poppins_500"
+                    android:layout_marginTop="10dp"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/grey_light_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:fontFamily="@font/poppins_500"
+                        android:gravity="center"
+                        android:text="OR"
+                        android:textColor="@color/grey_light_color"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/grey_light_color" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/solid_rounded_corner_30dp"
+                    android:backgroundTint="@color/blue_color">
+
+                    <ImageView
+                        android:id="@+id/img_linkedin"
+                        android:layout_width="19dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/txt_linkedin"
+                        android:src="@drawable/ic_linkedin_svg" />
+
+
+                    <TextView
+                        android:id="@+id/txt_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/poppins_500"
+                        android:gravity="center"
+                        android:paddingTop="2dp"
+                        android:text="Sign up with LinkedIn"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/poppins_500"
+                        android:text="Have an Account? "
+                        android:textColor="@color/grey_light_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/poppins_700"
+                        android:text="Login"
+                        android:textColor="@color/green_color"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

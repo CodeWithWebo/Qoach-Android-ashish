@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:layout_margin="5dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/txt_notification_title"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:fontFamily="@font/poppins_400"
+          android:maxLines="4"
+          android:text="I am not able to scale up my IT business. How to generate leads and increase revenue? So need help from an expert Coach..........................."
+          android:textColor="@color/grey_light_color"
+          android:textSize="12sp"
+          app:layout_constraintEnd_toStartOf="@+id/txt_notification_time"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+      <ImageButton
+          android:id="@+id/txt_notification_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:background="@color/transparent_color"
+          android:padding="3dp"
+          android:src="@drawable/ic_send_svg"
+          app:layout_constraintBottom_toBottomOf="@+id/txt_notification_title"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/txt_notification_title" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

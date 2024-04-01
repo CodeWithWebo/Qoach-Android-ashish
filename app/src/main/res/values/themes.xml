@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QoachAndroid" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+
+        <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
+    </style>
+
+    <style name="Theme.QoachAndroid" parent="Base.Theme.QoachAndroid" />
+
+
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <!--        <item name="android:textColor">@android:color/white</item>-->
+        <!--        <item name="android:textColor">@color/violet_color</item>-->
+
+        <item name="buttonTint">@color/green_color</item>
+    </style>
+</resources>
